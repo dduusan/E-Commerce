@@ -1,0 +1,128 @@
+.relatedproduct {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .relatedproduct h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .relatedproduct hr {
+    width: 60px;
+    height: 3px;
+    background: #333;
+    border: none;
+    margin: 0 auto 20px auto;
+  }
+  
+  .relatedproduct-item {
+    display: flex;
+    flex-direction: row;  /* Ensures products are displayed in a row */
+    justify-content: center;  /* Center items horizontally */
+    gap: 30px;  /* Space between each product */
+    flex-wrap: wrap;  /* Allows wrapping to the next line if necessary */
+  }
+  
+  .relatedproduct-item .item {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+  }
+  
+  .relatedproduct-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .relatedproduct-item p {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .relatedproduct-item .item-prices {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 10px 10px;
+  }
+  
+  .relatedproduct-item .item-prices-new {
+    color: #e63946;
+    font-weight: bold;
+  }
+  
+  .relatedproduct-item .item-prices-old {
+    text-decoration: line-through;
+    color: #888;
+  }
+  @media(max-width:1280px){
+    .relatedproduct{
+        height: 70vh;
+    }
+.relatedproduct h1{
+    font-size: 40px;
+}
+.relatedproduct hr{
+    height: 4px;
+    width: 160px;
+}
+    .relatedproduct-item{
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+}
+
+@media(max-width:1024px){
+    .relatedproduct{
+        height: 60vh;
+    }
+.relatedproduct h1{
+    font-size: 30px;
+}
+.relatedproduct hr{
+    height: 3px;
+    width: 120px;
+}
+    .relatedproduct-item{
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+}
+
+@media(max-width:800px){
+    .relatedproduct{
+        height: 50vh;
+        gap: 6px;
+    }
+.relatedproduct h1{
+    font-size: 20px;
+}
+.relatedproduct hr{
+    
+    width: 100px;
+}
+    .relatedproduct-item{
+        
+        gap: 5px;
+    }
+
+}
+@media(max-width:500px){
+    .relatedproduct{
+        height: 90vh;
+        
+    }
+
+    .relatedproduct-item{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+}
